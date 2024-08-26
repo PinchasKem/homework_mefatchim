@@ -39,8 +39,8 @@ def count_inversions_simple_effective(arr):
             if arr[i] > arr[j]:
                 count += 1
                 inner_count += 1
-                if inner_count == i-1:
-                    break
+            if inner_count == arr[i]-1:
+                break
     return count
 
 '''
